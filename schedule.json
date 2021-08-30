@@ -1,0 +1,120 @@
+[
+    {
+        "dia" : "Monday",
+        "clases" : [
+            {
+                "nombre" : "Administracion",
+                "url" : "https://meet.google.com/xwt-mvsv-zqs",
+                "start" : "7:30",
+                "end" : "8:15"
+            },
+            {
+                "nombre" : "Contabilidad",
+                "url" : "https://meet.google.com/icu-qgsm-esa",
+                "start" : "8:15",
+                "end" : "9:00"
+            },
+            {
+                "nombre" : "Matematicas Financieras",
+                "url" : "https://meet.google.com/icu-qgsm-esa",
+                "start" : "9:00",
+                "end" : "9:45"
+            },
+            {
+                "nombre" : "Receso",
+                "url" : "https://instagram.com",
+                "start" : "9:45",
+                "end" : "10:10"
+            },
+            {
+                "nombre" : "Inglés",
+                "url" : "https://meet.google.com/iqt-ormf-ixg",
+                "start" : "10:10",
+                "end" : "10:55"
+            },
+            {
+                "nombre" : "Valores",
+                "url" : "",
+                "start" : "10:55",
+                "end" : "11:40"
+            },
+            {
+                "nombre" : "Receso",
+                "url" : "https://instagram.com",
+                "start" : "11:40",
+                "end" : "12:00"
+            },
+            {
+                "nombre" : "Etimologia",
+                "url" : "",
+                "start" : "12:00",
+                "end" : "12:45"
+            },
+            {
+                "nombre" : "Logica",
+                "url" : "",
+                "start" : "12:45",
+                "end" : "13:30"
+            }
+        ]
+    },
+    {
+        "dia" : "Friday",
+        "clases" : [
+            {
+                "nombre" : "Geografía",
+                "url" : "https://meet.google.com/gbn-wncf-bjy",
+                "start" : "7:30",
+                "end" : "8:10"
+            },
+            {
+                "nombre" : "Computacion",
+                "url" : "https://meet.google.com/enm-gymz-rvj",
+                "start" : "8:10",
+                "end" : "8:50"
+            },
+            {
+                "nombre" : "Estructura Socioeconómica",
+                "url" : "https://meet.google.com/ezc-rqqf-nym",
+                "start" : "8:50",
+                "end" : "9:30"
+            },
+            {
+                "nombre" : "Receso",
+                "url" : "https://instagram.com",
+                "start" : "9:30",
+                "end" : "9:55"
+            },
+            {
+                "nombre" : "Inglés",
+                "url" : "https://meet.google.com/iqt-ormf-ixg",
+                "start" : "9:55",
+                "end" : "10:35"
+            },
+            {
+                "nombre" : "Matemáticas Financieras",
+                "url" : "https://meet.google.com/icu-qgsm-esa",
+                "start" : "10:35",
+                "end" : "11:15"
+            },
+            {
+                "nombre" : "Receso",
+                "url" : "https://instagram.com",
+                "start" : "11:15",
+                "end" : "11:35"
+            },
+            {
+                "nombre" : "Contabilidad",
+                "url" : "https://meet.google.com/icu-qgsm-esa",
+                "start" : "11:35",
+                "end" : "12:15"
+            },
+            {
+                "nombre" : "Administracion",
+                "url" : "https://meet.google.com/xwt-mvsv-zqs",
+                "start" : "12:15",
+                "end" : "13:00"
+            }
+        ]
+    }   
+]
