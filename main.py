@@ -1,5 +1,5 @@
 from win10toast import ToastNotifier
-from datetime import datetime
+from datetime import date, datetime
 import webbrowser
 import json
 import time
@@ -21,29 +21,34 @@ def get_date():
 
 def read_json_file(filename):
     myFile = open(filename)
+    urlFile = open('classesURL.json')
     data = json.load(myFile)
     date = get_date()
 
     for dayInstance in data:
-        if dayInstance['dia'] == date['day']:
+        if dayInstance['day'] == date['day']:
             for myClass in dayInstance['clases']:
-                if myClass['start'] == date['time']:
-                    open_in_browser(myClass['url'])
-                    notif(myClass['nombre'], 'La clase empieza {}\nLa clase temina {}\nSuerte!'.format(myClass['start'], myClass['end']))
-                    print(myClass['nombre'])
-                    time.sleep(70)
-                elif myClass['end'] == date['time']:
-                    notif('Ha termidado la clase')
-                    print("End")
-                    time.sleep(70)
+                for classInstance in urlFile:
+                    if myClass['start'] == date['time']:
+                        notif(myClass['nombre'], 'La clase empieza {}\nLa clase temina {}\nSuerte!'.format(myClass['start'], myClass['end']))
+                        time.sleep(5)
+                        if classInstance['name'] == myClass['name']:
+                            open_in_browser(classInstance['url'])
+                        print(myClass['nombre'])
+                        time.sleep(65)
+                    elif myClass['end'] == date['time']:
+                        notif('Ha termidado la clase')
+                        print("End")
+                        time.sleep(65)
 
     myFile.close()
 
 def main():
-    read_json_file('schedule.json')
+    date = get_date()
+    while date['day'] != "Saturday" or date['day'] != "Sunday":
+        read_json_file('schedule.json')
 
 
 if __name__ == "__main__":
     print('Schedule manager\n[i] Active')
-    while True:
-        main()
+    main()
